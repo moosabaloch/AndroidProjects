@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RFDuino Test</string>
+    <string name="scan_started">Scan started...</string>
+    <string name="stop_scan">Stop Scan</string>
+    <string name="scanning">Scanning...</string>
+    <string name="scan">Scan</string>
+</resources>

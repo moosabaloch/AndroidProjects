@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Aws Integration</string>
+    <string name="selectandupload">SELECT and Upload</string>
+    <string name="setImage">SET IMAGE</string>
+</resources>

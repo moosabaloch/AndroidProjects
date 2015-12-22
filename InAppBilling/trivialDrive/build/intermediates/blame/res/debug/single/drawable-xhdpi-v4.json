@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\gas3.png",
+        "source": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\src\\main\\res\\drawable-xhdpi\\gas3.png"
+    },
+    {
+        "merged": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\premium.png",
+        "source": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\src\\main\\res\\drawable-xhdpi\\premium.png"
+    },
+    {
+        "merged": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\gas_inf.png",
+        "source": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\src\\main\\res\\drawable-xhdpi\\gas_inf.png"
+    },
+    {
+        "merged": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\upgrade_app.png",
+        "source": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\src\\main\\res\\drawable-xhdpi\\upgrade_app.png"
+    },
+    {
+        "merged": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\wait.png",
+        "source": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\src\\main\\res\\drawable-xhdpi\\wait.png"
+    },
+    {
+        "merged": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\gas4.png",
+        "source": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\src\\main\\res\\drawable-xhdpi\\gas4.png"
+    },
+    {
+        "merged": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\buy_gas.png",
+        "source": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\src\\main\\res\\drawable-xhdpi\\buy_gas.png"
+    },
+    {
+        "merged": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\free.png",
+        "source": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\src\\main\\res\\drawable-xhdpi\\free.png"
+    },
+    {
+        "merged": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\title.png",
+        "source": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\src\\main\\res\\drawable-xhdpi\\title.png"
+    },
+    {
+        "merged": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_action_search.png",
+        "source": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\src\\main\\res\\drawable-xhdpi\\ic_action_search.png"
+    },
+    {
+        "merged": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\gas1.png",
+        "source": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\src\\main\\res\\drawable-xhdpi\\gas1.png"
+    },
+    {
+        "merged": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\gas2.png",
+        "source": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\src\\main\\res\\drawable-xhdpi\\gas2.png"
+    },
+    {
+        "merged": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\drive.png",
+        "source": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\src\\main\\res\\drawable-xhdpi\\drive.png"
+    },
+    {
+        "merged": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\gas0.png",
+        "source": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\src\\main\\res\\drawable-xhdpi\\gas0.png"
+    },
+    {
+        "merged": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\infinite_gas.png",
+        "source": "E:\\AndroidProjects\\InAppBilling\\trivialDrive\\src\\main\\res\\drawable-xhdpi\\infinite_gas.png"
+    }
+]

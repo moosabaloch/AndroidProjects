@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">InAppBilling</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome">Welcome to Android Purchase...!</string>
+    <string name="opennewfrag">Open New Frag</string>
+    <string name="buyfrag">Buy a Fragment</string>
+</resources>
