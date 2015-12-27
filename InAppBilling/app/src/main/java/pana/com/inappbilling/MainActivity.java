@@ -20,13 +20,31 @@ public class MainActivity extends AppCompatActivity {
     private static final String ITEM_SKU = "android.test.purchased";
     private Button buyFragButton, openFragButton;
     private String TAG = "pana.inappbilling";
+    IabHelper.QueryInventoryFinishedListener mGotInventoryListener
+            = new IabHelper.QueryInventoryFinishedListener() {
+        public void onQueryInventoryFinished(IabResult result,
+                                             Inventory inventory) {
+
+            if (result.isFailure()) {
+                // handle error here
+            } else {
+                // does the user have the premium upgrade?
+                boolean mIsPremium = inventory.hasPurchase(ITEM_SKU);
+                // Purchase p=inventory.getPurchase(ITEM_SKU);
+//               SkuDetails p=inventory.getSkuDetails(ITEM_SKU);
+                String msg = result.getMessage();
+                // update UI accordingly
+                Log.d(TAG, "QueryInventoryFinishedListener()--> Inventory:" + mIsPremium + " - "/*+ p.toString()*/ + " || Result:" + msg);
+            }
+        }
+    };
     private IabHelper.OnConsumeFinishedListener mConsumeFinishedListener =
             new IabHelper.OnConsumeFinishedListener() {
                 public void onConsumeFinished(Purchase purchase,
                                               IabResult result) {
 
                     if (result.isSuccess()) {
-                        Log.d(TAG,"OnConsumeFinishListener() --> "+ result.getMessage());
+                        Log.d(TAG, "OnConsumeFinishListener() --> " + result.getMessage());
 
                         openFragButton.setEnabled(true);
                     } else {
@@ -43,11 +61,11 @@ public class MainActivity extends AppCompatActivity {
 
             if (result.isFailure()) {
                 // Handle failure
-                Log.e(TAG,"OnQueryInventoryFinished() --> "+ result.getMessage());
+                Log.e(TAG, "OnQueryInventoryFinished() --> " + result.getMessage());
             } else {
-                Log.d(TAG,"OnQueryInventoryFinished() --> "+ result.getMessage());
+                Log.d(TAG, "OnQueryInventoryFinished() --> " + result.getMessage());
 
-                mHelper.consumeAsync(inventory.getPurchase(ITEM_SKU),mConsumeFinishedListener);
+                mHelper.consumeAsync(inventory.getPurchase(ITEM_SKU), mConsumeFinishedListener);
             }
         }
     };
@@ -56,10 +74,10 @@ public class MainActivity extends AppCompatActivity {
                                           Purchase purchase) {
             if (result.isFailure()) {
                 // Handle error
-                Log.e(TAG,"OnIabPurchaseFinished() --> "+ result.getMessage());
+                Log.e(TAG, "OnIabPurchaseFinished() --> " + result.getMessage());
                 return;
             } else if (purchase.getSku().equals(ITEM_SKU)) {
-                Log.d(TAG,"OnIabPurchaseFinished() --> "+ result.getMessage());
+                Log.d(TAG, "OnIabPurchaseFinished() --> " + result.getMessage());
 
                 consumeItem();
                 buyFragButton.setEnabled(false);
@@ -99,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
                             result);
                 } else {
                     Log.d(TAG, result.getMessage());
+                    mHelper.queryInventoryAsync(mGotInventoryListener);
 
                     Log.d(TAG, "onIabSetupFinished() -- > In-app Billing is set up OK");
                 }
@@ -108,7 +127,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         buttons();
-
     }
 
     private void buttons() {
