@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_id": "gcmtesting-1173",
+    "project_number": "756584497396",
+    "name": "GCMTesting"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756584497396:android:01d4798a7ffdcf36",
+        "client_id": "android:demo.gcm.com",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "demo.gcm.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756584497396:android:4cb0864a46b4f783",
+        "client_id": "android:demo.gcm.gcmmoosa",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "demo.gcm.gcmmoosa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}
