@@ -14,7 +14,8 @@ public class QuickstartPreferences {
 
     public static final String SENT_TOKEN_TO_SERVER = "sentTokenToServer";
     public static final String REGISTRATION_COMPLETE = "registrationComplete";
-    public static final String SENDER_ID="756584497396";
-    public static final String SERVER_KEY_FOR_THIS_PROJECT="AIzaSyBWgmWxe3Vy9Hhsj6QAQhgtcvTNhqPDjG4";
+    public static final String SENDER_ID = "756584497396";
+    public static final String SERVER_KEY_FOR_THIS_PROJECT = "AIzaSyBWgmWxe3Vy9Hhsj6QAQhgtcvTNhqPDjG4";
+    public static final String SERVER_URL = "http://192.168.92.1:3000/gcm/register";
 
 }

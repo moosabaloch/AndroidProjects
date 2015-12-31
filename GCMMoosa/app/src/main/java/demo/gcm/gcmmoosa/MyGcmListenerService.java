@@ -58,7 +58,7 @@ public class MyGcmListenerService extends GcmListenerService {
 
     /**
      * Called when message is received.
-     *
+     * Called By Operating System
      * @param from SenderID of the sender.
      * @param data Data bundle containing message data as key/value pairs.
      *             For Set of keys use data.keySet().
@@ -66,7 +66,7 @@ public class MyGcmListenerService extends GcmListenerService {
     // [START receive_message]
     @Override
     public void onMessageReceived(String from, Bundle data) {
-        String message = data.getString("message");
+        String message = data.getString("key1");
         Log.d(TAG, "From: " + from);
         Log.d(TAG, "Message: " + message);
 
