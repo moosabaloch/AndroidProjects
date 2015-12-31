@@ -135,18 +135,18 @@ public class RegistrationIntentService extends IntentService {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                       // Toast.makeText(MainActivity.this,response,Toast.LENGTH_LONG).show();
+                        Log.d("Volley POST Response", "Message: " + response);
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        //Toast.makeText(MainActivity.this,error.toString(), Toast.LENGTH_LONG).show();
+                        Log.e("Volley POST Error", "Message: " + error.getMessage());
                     }
                 }){
             @Override
             protected Map<String,String> getParams(){
-                Map<String,String> params = new HashMap<String, String>();
+                Map<String,String> params = new HashMap<>();
                 params.put("registrationId", token);
                 return params;
             }
