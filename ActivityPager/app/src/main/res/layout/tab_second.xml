@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p2="http://schemas.android.com/apk/res/android"
+    p2:orientation="vertical" p2:layout_width="match_parent"
+    p2:layout_height="match_parent">
+    <ImageView
+        p2:layout_width="wrap_content"
+        p2:layout_height="wrap_content"
+        p2:padding="2dp"
+        p2:src="@drawable/ic_menu_gallery" />
+
+    <TextView
+        p2:layout_width="wrap_content"
+        p2:layout_height="wrap_content"
+        p2:padding="2dp"
+        p2:text="second" />
+</LinearLayout>

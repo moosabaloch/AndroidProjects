@@ -16,20 +16,10 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
-import android.widget.Toast;
 
-import com.android.volley.Request;
-import com.android.volley.Request.Method;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.StringRequest;
 import com.google.android.gms.gcm.GcmPubSub;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 import com.google.android.gms.iid.InstanceID;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -70,7 +60,7 @@ public class RegistrationIntentService extends IntentService {
             // You should store a boolean that indicates whether the generated token has been
             // sent to your server. If the boolean is false, send the token to your server,
             // otherwise your server should have already received the token.
-            //#####  sharedPreferences.edit().putBoolean(QuickstartPreferences.SENT_TOKEN_TO_SERVER, true).apply();
+            sharedPreferences.edit().putBoolean(QuickstartPreferences.SENT_TOKEN_TO_SERVER, true).apply();
             // [END register_for_gcm]
         } catch (Exception e) {
             Log.d(TAG, "Failed to complete token refresh", e);
@@ -94,67 +84,10 @@ public class RegistrationIntentService extends IntentService {
     private void sendRegistrationToServer(final String token) {
         // Add custom implementation, as needed.
         Log.e("Server Not Implemented", "Token is: " + token);
-/*
-        StringRequest stringRequest = new StringRequest(Method.POST, QuickstartPreferences.SERVER_URL,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        Log.d("Volley POST Response", "Message: " + response);
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.e("Volley POST Error", "Message: " + error.getMessage());
-            }
-        });
-*/
-     /*   JSONObject jsonObject=new JSONObject();
-        try {
-            jsonObject.put("registrationId", token);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }*/
 
-     /*   JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Method.POST, QuickstartPreferences.SERVER_URL,
-                jsonObject
-                , new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                Log.d("Volley POST Response", "Message: " + response);
-
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.e("Volley POST Error", "Message: " + error.getMessage());
-
-            }
-        });
-        AppController.getInstance().addToRequestQueue(jsonObjectRequest);*/
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, QuickstartPreferences.SERVER_URL,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        Log.d("Volley POST Response", "Message: " + response);
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Log.e("Volley POST Error", "Message: " + error.getMessage());
-                    }
-                }){
-            @Override
-            protected Map<String,String> getParams(){
-                Map<String,String> params = new HashMap<>();
-                params.put("registrationId", token);
-                return params;
-            }
-
-        };
-        AppController.getInstance().addToRequestQueue(stringRequest);
-
-
+        Map<String, String> map = new HashMap<>();
+        map.put("registrationId", token);
+        AppController.getInstance().addToRequestQueue(new PostReq(map));
     }
 
     /**

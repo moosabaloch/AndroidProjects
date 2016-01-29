@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p3="http://schemas.android.com/apk/res/android"
+    p3:orientation="vertical" p3:layout_width="match_parent"
+    p3:layout_height="match_parent">
+    <ImageView
+        p3:layout_width="wrap_content"
+        p3:layout_height="wrap_content"
+        p3:padding="2dp"
+        p3:src="@drawable/ic_menu_manage" />
+
+    <TextView
+        p3:layout_width="wrap_content"
+        p3:layout_height="wrap_content"
+        p3:padding="2dp"
+        p3:text="third" />
+</LinearLayout>
